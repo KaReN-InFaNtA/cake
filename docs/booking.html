@@ -1,0 +1,42 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"> Bakery </a>
+    </header>
+
+    <section class="booking-form">
+        <h2>Order Details</h2>
+        <form action="confirmation.html" method="GET">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cake-type">Cake Type:</label>
+            <select id="cake-type" name="cake-type">
+                <option value="fruit">Fruit Cake</option>
+                <option value="donut">Donut</option>
+                <option value="sparkel">Sparkel Cake</option>
+                <option value="nutella">Nutella Cake</option>
+                <option value="cranberry">Cranberry Cake</option>
+            </select>
+
+            <label for="message">Special Instructions:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="submit" value="Place Order" class="btn">
+        </form>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
